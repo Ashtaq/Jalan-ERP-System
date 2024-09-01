@@ -1003,8 +1003,125 @@
 		</div>
 	</div>
 	<!-- end search modal -->
+	<!--start page wrapper -->
+	<div class="page-wrapper">
+		<div class="page-content">
+			<!--breadcrumb-->
+			<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+				<div class="breadcrumb-title pe-3">Leave Form</div>
+				<div class="ps-3">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb mb-0 p-0">
+							<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+							</li>
+							<li class="breadcrumb-item active" aria-current="page">Please fill to Apply For Leave</li>
+						</ol>
+					</nav>
+				</div>
+				<div class="ms-auto">
+					<div class="btn-group">
+						<button type="button" class="btn btn-primary">Settings</button>
+						<button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
+						</button>
+						<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a class="dropdown-item" href="javascript:;">Action</a>
+							<a class="dropdown-item" href="javascript:;">Another action</a>
+							<a class="dropdown-item" href="javascript:;">Something else here</a>
+							<div class="dropdown-divider"></div>	<a class="dropdown-item" href="javascript:;">Separated link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end breadcrumb-->
+			<div class="row">
+				<div class="col-xl-6 mx-auto">
+					
+					<div class="card">
+						<div class="card-body p-4">
+							<h5 class="mb-4">Leave Form</h5>
+							<form class="row g-3">
+								<div class="col-md-12">
+									<label for="input1" class="form-label">Email ID</label>
+									<input type="email" class="form-control" id="input1" placeholder="Email ID">
+								</div>
+							
+								<div class="col-md-12">
+									<label for="input7" class="form-label">Type of Leave</label>
+									<select id="input7" class="form-select">
+										<option selected>Choose One</option>
+										<option>One Full Day</option>
+										<option>Half Day Morning</option>
+										<option>Half Day Evening</option>
+									</select>
+								</div>
+								<div class="col-md-12" style="padding-bottom: 10px; font-size: 15px;">
+									<label for="input7" class="form-label">Reason for Leave</label>
+									<div class="d-flex">
+										<div class="text-left">
+											<label class="form-check-label" for="flexRadioDefault1">Medical Leave</label>
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+										</div>
+										<div class="align-middle" style="padding-left: 60px;">
+											<label class="form-check-label" for="flexRadioDefault2">Personal Leave</label>
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<label for="input6" class="form-label">Start Date</label>
+										<input type="date" class="form-control" id="input6" placeholder="Start Date">
+									</div>
+									<div class="col-md-6">
+										<label for="input7" class="form-label">End Date</label>
+										<input type="date" class="form-control" id="input7" placeholder="End Date">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<label for="input5" class="form-label">Remarks</label>
+									<input type="text" class="form-control" id="input5" placeholder="Remarks">
+								</div>
+								
+								<div class="col-md-12">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="input12" onclick="showToast()">
+										<label class="form-check-label" for="input12">Check me out</label>
+										<div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true" id="toastNotification">
+											<div class="d-flex">
+												<div class="toast-body">
+													I confirm that the information provided above is accurate, and I understand the company's leave policies. I will ensure that my responsibilities are delegated appropriately during my absence.
+												</div>
+												<button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<script>
+									function showToast() {
+										var toastElement = document.getElementById('toastNotification');
+										var toast = new bootstrap.Toast(toastElement);
+								
+										// Check if the toast is currently shown
+										if (toastElement.classList.contains('show')) {
+											toast.hide(); // Hide the toast if it is currently shown
+										} else {
+											toast.show(); // Show the toast if it is not currently shown
+										}
+									}
+								</script>
+								
+								
+								<div class="col-md-12">
+									<div class="d-md-flex d-grid align-items-center gap-3">
+										<button type="button" class="btn btn-primary px-4">Submit</button>
+										<button type="button" class="btn btn-light px-4">Reset</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
 
-
+				
 
 
 	<!--start switcher-->
